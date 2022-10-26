@@ -17,6 +17,10 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1,
@@ -47,11 +51,16 @@ a:active {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 40px;
+  width: min(100% - 40px, 1000px);
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 900px) {
   .grid {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
+    padding-left: 0;
+    padding-right: 0%;
   }
 }
 .grid__main, .grid__sidebar {

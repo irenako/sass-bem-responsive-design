@@ -18,4 +18,6 @@ body {
   font-family: $font;
   background-color: var(--background-color);
   color: var(--text-color);
+  display: grid;
+  justify-content: center;
 }
