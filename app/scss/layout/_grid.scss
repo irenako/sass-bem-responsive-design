@@ -33,13 +33,21 @@
   }
 
   &__sidebar {
-    background-color: hsl(300, 100%, 30%);
-
     @include breakpoint-down(medium) {
       text-align: center;
     }
     @include breakpoint-down(small) {
       text-align: right;
+    }
+  }
+  &__widget {
+    padding: rem(16);
+    &.green {
+      background-color: hsl(120, 100%, 27%);
+    }
+
+    &.magenta {
+      background-color: hsl(300, 100%, 30%);
     }
   }
 }

@@ -89,9 +89,6 @@ a:active {
     background-color: hsl(39deg, 100%, 35%);
   }
 }
-.grid__sidebar {
-  background-color: hsl(300deg, 100%, 30%);
-}
 @media (max-width: 3.515625em) {
   .grid__sidebar {
     text-align: center;
@@ -101,4 +98,13 @@ a:active {
   .grid__sidebar {
     text-align: right;
   }
+}
+.grid__widget {
+  padding: 1rem;
+}
+.grid__widget.green {
+  background-color: hsl(120deg, 100%, 27%);
+}
+.grid__widget.magenta {
+  background-color: hsl(300deg, 100%, 30%);
 }/*# sourceMappingURL=style.css.map */
